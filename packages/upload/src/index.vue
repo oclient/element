@@ -208,13 +208,13 @@ export default {
         this.abort(file);
         let fileList = this.uploadFiles;
         fileList.splice(fileList.indexOf(file), 1);
-        this.onRemove(file, fileList);
+        this.onRemove(file, fileList,this.data);
       };
 
       if (!this.beforeRemove) {
         doRemove();
       } else if (typeof this.beforeRemove === 'function') {
-        const before = this.beforeRemove(file, this.uploadFiles);
+        const before = this.beforeRemove(file, this.uploadFiles,this.data);
         if (before && before.then) {
           before.then(() => {
             doRemove();
