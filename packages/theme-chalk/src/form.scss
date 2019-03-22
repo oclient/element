@@ -36,7 +36,7 @@
   }
 }
 @include b(form-item) {
-  margin-bottom: 22px;
+  margin-bottom: 0px;
   @include utils-clearfix;
 
   & .el-form-item {
@@ -63,7 +63,7 @@
       line-height: 32px;
     }
     &.el-form-item {
-      margin-bottom: 18px;
+      margin-bottom: 0x;
     }
     .el-form-item__error {
       padding-top: 2px;
@@ -77,7 +77,7 @@
       line-height: 28px;
     }
     &.el-form-item {
-      margin-bottom: 18px;
+      margin-bottom: 0px;
     }
     .el-form-item__error {
       padding-top: 1px;
@@ -88,7 +88,7 @@
     text-align: right;
     vertical-align: middle;
     float: left;
-    font-size: 14px;
+    font-size: 12px;
     color: $--color-text-regular;
     line-height: 40px;
     padding: 0 12px 0 0;
